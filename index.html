@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Group 5's Minute Meeting</title>  
+    <link rel="icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+       <h1> Group 5's First Meeting</h1>
+       <h2> Brainstorming Team Branding</h2>
+        <div><b>Overview for April 10th Meeting</b></div> 
+        <nav>
+            <p>This <span>meeting our group</span> met for the first time to work on team bonding and the first assignment.<br/>
+                 Our goal was to assign roles for the assignment and develop our team brand. We also addressed everyone's skill set.</p>
+            <ul>
+                <li><a href="#taskscompleted">Tasks Completed</a></li>
+                <li><a href="#meetingvideoandaudio">Meeting Recordings</a></li>
+                <li><a href="#agendafornext">Next Meeting's Agenda</a></li>
+            </ul>
+            <h4>Attendance List: </h4>
+                <ul>
+                    <li>Teá Ruiz</li>
+                    <li>Sydney Pate</li>
+                    <li>Najee Rice</li>
+                    <li>Bella Wong</li>
+                </ul>
+            <h4>Agenda:</h4>
+            <ol>
+                <li><b>From last meeting:</b> Team bonding activity</li>
+                <li>Team mascot and name</li>
+                <li>Read through assignment together</li>
+                <li>Split up assignment work</li>
+                <select name="roll" id="roll-select">
+                    <option value="">--Please choose a role</option>
+                    <option value="page">Team Page</option>
+                    <option value="video">Team Video</option>
+                    <option value="org">Team GitHub Organization</option>
+                </select>
+                <button>Submit</button>
+            </ol>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3 id="taskscompleted">Tasks Completed</h3>
+            <ol>
+                <li>Team bonding with skribbl.io and introductions</li>
+                <li>Created an organization on GitHub for the group</li>
+                <li>Assigned members to tasks for assignment due on <em>April 13 at 1:59pm</em></li>
+                <li>Worked on team branding<br/>
+                    <i>Our mascot:</i> </li>
+                <img 
+                    class="fit-picture"
+                    src="mascot.png"
+                    alt="Great white shark"
+                    style="width: 200px;height:200px;"/>
+            </ol>
+        </section>
+        
+        
+            <textarea id="story" name="story" rows="5" cols="33">
+            Enter a team name suggestion:
+            </textarea>
+            <button>Submit</button>
+        <h3 id="meetingvideoandaudio">Meeting Recordings</h3>
+        <video controls width="300">
+            <source src="minutemeetvid.mp4" type="video/mp4"/>
+            <a href="minutemeetvid.mp4">MP4</a>
+
+        </video>
+
+        <figure>
+            <figcaption>Meeting Audio</figcaption>
+            <audio controls src="audio1232003672.m4a"></audio>
+            <a href="audio1232003672.m4a"></a>
+        </figure>
+
+        <details>
+            <summary>Details</summary>
+            Next week's recordings will be longer.
+          </details>   
+    </main>
+    <hr />
+    <footer>
+        <h3 id="agendafornext">Next Meeting's Agenda</h3>
+            <ol>
+                <li>Plan meetings for rest of the quarter.</li>
+                <li>Share ideas for project theme</li>
+                <li>Begin <strong>Warmup Exercise</strong></li>
+            </ol>
+       
+        <h4>Fun Poll:</h4>
+            <form>
+                <legend>Pick your favorite mascot</legend>
+                <input type="radio" id="shark" name="mascot" value="S"/>
+                <label for="shark">Shark</label><br/>
+                <input type="radio" id="triton" name="mascot" value="T"/>
+                <label for="triton">Triton</label><br/>
+                <input type="radio" id="'bulldogs" name="mascot" value="B"/>
+                <label for="bulldogs">Bulldogs</label>
+            </form>
+        <h5 id="subscribe">Subscribe For Next Week's Minute Meeting!</h6>
+            <form onsubmit="alert('Subscribed')">
+              <input type="text" placeholder="Enter Email Address" />
+              <button>Submit</button>
+            </form>
+    </footer>
+  </body>
+</html>
