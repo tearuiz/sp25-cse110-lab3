@@ -32,14 +32,14 @@
                 <li>Team mascot and name</li>
                 <li>Read through assignment together</li>
                 <li>Split up assignment work</li>
-                <select name="roll" id="roll-select">
-                    <option value="">--Please choose a role</option>
-                    <option value="page">Team Page</option>
-                    <option value="video">Team Video</option>
-                    <option value="org">Team GitHub Organization</option>
-                </select>
-                <button>Submit</button>
             </ol>
+            <select name="roll" id="roll-select">
+                <option value="">--Please choose a role</option>
+                <option value="page">Team Page</option>
+                <option value="video">Team Video</option>
+                <option value="org">Team GitHub Organization</option>
+            </select>
+            <button>Submit</button>
             
         </nav>
     </header>
@@ -53,12 +53,12 @@
                 <li>Assigned members to tasks for assignment due on <em>April 13 at 1:59pm</em></li>
                 <li>Worked on team branding<br/>
                     <i>Our mascot:</i> </li>
-                <img 
+            </ol>
+            <img 
                     class="fit-picture"
                     src="mascot.png"
                     alt="Great white shark"
                     style="width: 200px;height:200px;"/>
-            </ol>
         </section>
         
         
@@ -95,15 +95,18 @@
        
         <h4>Fun Poll:</h4>
             <form>
-                <legend>Pick your favorite mascot</legend>
+                <fieldset>
+                    <legend>Pick your favorite mascot</legend>
                 <input type="radio" id="shark" name="mascot" value="S"/>
                 <label for="shark">Shark</label><br/>
                 <input type="radio" id="triton" name="mascot" value="T"/>
                 <label for="triton">Triton</label><br/>
-                <input type="radio" id="'bulldogs" name="mascot" value="B"/>
+                <input type="radio" id="bulldogs" name="mascot" value="B"/>
                 <label for="bulldogs">Bulldogs</label>
+                </fieldset>
+                <button>Submit</button>
             </form>
-        <h5 id="subscribe">Subscribe For Next Week's Minute Meeting!</h6>
+        <h6 id="subscribe">Subscribe For Next Week's Minute Meeting!</h6>
             <form onsubmit="alert('Subscribed')">
               <input type="text" placeholder="Enter Email Address" />
               <button>Submit</button>
